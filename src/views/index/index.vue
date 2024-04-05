@@ -43,24 +43,32 @@
 
         </div>
         <div class="text-center content md:mt-[200px] mt-[130px]">
-          <div class="md:text-[72px] text-[32px] font-bold mx-auto">
-            <span v-if="!isMobile" class="title-text">L1-2 INFRASTRUCTURE FOR <br /> ALL THE FULL CHAIN ASSETS</span>
-            <span v-if="isMobile" class="title-text">L1-2 INFRASTRUCTURE FOR ALL THE FULL CHAIN ASSETS</span>
-          </div>
-          <div class="md:justify-center md:flex mt-[40px]">
-            <a-button class="w-[178px] h-[37px] text-[#fff]  btn-box md:mr-[24px] ms:mx-auto mb-[24px] md:mb-[0px]"
-              @click="clickJoin">Join
-              $ABSC</a-button>
-            <a-anchor :affix="false" :items="[{
-    key: '1',
-    href: '#bmaker-demo-video',
-    title: 'View demo',
-  }]" @change="onChange">
-              <a-button class="w-[178px] h-[37px] text-[#fff] mt-[40px] btn-box">View Demo</a-button>
-            </a-anchor>
-            <!-- <a-button class="w-[178px] h-[37px] text-[#fff] mt-[40px] btn-box" href="#bmaker-demo-video"
-              @click="onChange">View Demo</a-button> -->
-          </div>
+                  <div class="md:text-[72px] text-[32px] font-bold mx-auto">
+                    <span v-if="!isMobile" class="title-text">LAYER M INFRA FOR  <br />  OMNI ASSETS</span>
+                    <span v-if="isMobile" class="title-text">LAYER M INFRA FOR OMNI ASSETS</span>
+                  </div>
+                  <div class="md:justify-center md:flex mt-[40px]">
+                    <a-button class="w-[178px] h-[37px] text-[#fff]  btn-box md:mr-[24px] ms:mx-auto mb-[24px] md:mb-[0px]"
+                      @click="clickJoin">Join
+                      $ABSC</a-button>
+                    <a-anchor :affix="false" :items="[{
+            key: '1',
+            href: '#bmaker-demo-video',
+            title: 'View demo',
+          }]" @change="onChange">
+                      <a-button class="w-[178px] h-[37px] text-[#fff] mt-[40px] btn-box">View Demo</a-button>
+                    </a-anchor>
+                    <!-- <a-button class="w-[178px] h-[37px] text-[#fff] mt-[40px] btn-box" href="#bmaker-demo-video"
+                      @click="onChange">View Demo</a-button> -->
+                  </div>
+                   <br/>
+
+                    <div class="md:text-[72px] text-[20px] font-bold mx-auto">
+                      <span  class="title-text">PARTNERSHIP：Paramita
+                     </span>
+
+                    </div>
+
         </div>
       </div>
 
