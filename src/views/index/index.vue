@@ -43,9 +43,10 @@
 
         </div>
         <div class="text-center content md:mt-[200px] mt-[130px]">
-          <div class="md:text-[72px] text-[32px] font-bold mx-auto">
-            <span v-if="!isMobile" class="title-text">L1-2 INFRASTRUCTURE FOR <br /> ALL THE FULL CHAIN ASSETS</span>
-            <span v-if="isMobile" class="title-text">L1-2 INFRASTRUCTURE FOR ALL THE FULL CHAIN ASSETS</span>
+          <div class="md:text-[72px] text-[32px] font-bold mx-auto title-text">
+            <!-- <span v-if="!isMobile" class="title-text">L1-2 INFRASTRUCTURE FOR <br /> ALL THE FULL CHAIN ASSETS</span>
+            <span v-if="isMobile" class="title-text">L1-2 INFRASTRUCTURE FOR ALL THE FULL CHAIN ASSETS</span> -->
+            LAYER M INFRA FOR OMNI ASSETS
           </div>
           <div class="md:justify-center md:flex mt-[40px]">
             <a-button class="w-[178px] h-[37px] text-[#fff]  btn-box md:mr-[24px] ms:mx-auto mb-[24px] md:mb-[0px]"
@@ -100,25 +101,24 @@
   <div class="bg-black px-[32px]">
     <div class="w-full text-[#ffffff] text-center md:pt-[120px] pt-[60px] max-w-[1428px] mx-auto">
       <div class="md:text-[48px] text-[24px] font-bold md:mb-[80px] mb-[48px]">
-        <div>Bmaker: BTC & Omni Chains Asset Infra<br />
-          Unlock infinite possibilities</div>
+        <div>Bmaker: BTC & Omni Chains Asset InfraUnlock infinite possibilities</div>
       </div>
       <div class="items-center justify-around md:flex">
         <img src="@/assets/images/Home-1.png" class="mx-auto md:w-[50%] w-[100%] md:mr-[50px] mb-[30px]" />
         <div class="md:text-[20px] text-[16px] text-left ">
-          · Omni chain infra L1-2 for decentralized stablecoin & all omni
-          chain
-          assets<br />
-          · BTC L1 Supporting the issuance of centralized stablecoins with excess collateral<br />
-          · Stablecoin can be used directly on EVM L1&L2 & Non EVM w/o coss chain bridge<br />
-          · Universal infra that can empower any asset with omni chain free consumption scenarios<br />
-          · Web 3 Massadotion/Web 2.5/ Old money friendly <br />
-          · Decentralized and fully on chain</div>
+          · Permissionless Verification on Bitcoin Original Network<br />
+          · “M” for Middle & Multiple｜SupportL1 & 2, EVM & non-EVM<br />
+          · Omni Asset Swift for Crypto assets<br />
+          · BC can earn Interest on Bitcoin L1! Without the need for warping / cross-chain bridge / any other
+          centralized solution<br />
+          · Omni-chains Swap/OTC/re-staking: One universal account / Secondly confirm / low gas fee / fully
+          decentralized environment<br />
+          · Finally! Omni-chains TVL expandability.An infrastructure helps all L1 & L2 to achieve interoperability! And
+          it's base on the strongest consensus in crypto business: the bitcoin original network!</div>
       </div>
       <div class="md:mt-[120px] mt-[60px]">
         <div class="md:text-[48px] text-[24px] font-bold md:mb-[80px] mb-[48px]">
-          BTC Ecological Native /EVM&Non-EVM supportable,
-          Web2.5-Web3.0 financial application scenarios friendly
+          Application Scenarios of Bmaker Infra & Omni chain assets
         </div>
         <img src="@/assets/images/Home-2.png" class="md:w-[80%] w-[100%] mx-auto" />
 
@@ -137,6 +137,19 @@
       </div>
     </div>
   </div>
+  <div class="pt-[60px] text-[#ffffff] box-4 px-[32px] md:h-full h-[400px] md:pb-[200px]">
+    <div class="md:text-[48px] text-[24px] font-bold md:mb-[80px] mb-[48px] text-center">Partnership</div>
+    <div
+      class="mx-auto grid md:grid-cols-3 grid-cols-2 gap-4 box-4-in w-[100%] md:w-[1160px] md:h-[540px] items-center md:justify-items-center p-[24px] md:p-[100px] ">
+      <img src="@/assets/images/ANT.png" class="md:h-[64px] h-[36px]" />
+      <img src="@/assets/images/Pic.png" class="md:h-[64px] h-[36px]" />
+      <img src="@/assets/images/KODO.png" class="md:h-[64px] h-[36px]" />
+      <img src="@/assets/images/Syn.png" class="md:h-[48px] h-[30px]" />
+      <img src="@/assets/images/Par.png" class="md:h-[48px]  h-[26px]" />
+      <img src="@/assets/images/OKX.png" class="md:h-[48px] h-[26px]" />
+    </div>
+  </div>
+
   <div class="max-w-[1428px] text-[#ffffff] px-[32px] pt-[60px] pb-[80px] mx-auto">
     <div>
       <img src="@/assets/images/mbake-logo.png" class="md:w-[140px] w-[110px]" />
@@ -333,7 +346,20 @@ onMounted(() => {
   outline: none;
 }
 
+.box-4 {
+  background: url("@/assets/images/home-bg5.png") 100% 100% no-repeat;
+  background-size: cover;
 
+
+}
+
+.box-4-in {
+  margin: 0 auto;
+  border: 2px solid #3b82f680;
+  background-color: rgba(59, 130, 246, 0.2);
+  /* padding: 80px 100px; */
+  border-radius: 12px;
+}
 
 
 
