@@ -184,7 +184,7 @@ const clickJoin = () => {
 }
 
 const clickTwitter = () => {
-  window.open('https://twitter.com/bscstable')
+  window.open('https://twitter.com/BmakerAI')
   open.value = false
 }
 
