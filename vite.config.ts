@@ -18,5 +18,10 @@ export default defineConfig({
     },
     // 配置文件扩展名
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],
+  },
+  server: {
+    proxy: {
+      '^/api/': 'https://bmaker-faucet.hamster.newtouch.com/'
+    }
   }
 })

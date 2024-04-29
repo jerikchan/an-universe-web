@@ -52,9 +52,9 @@
             tBMR today.
             </p>
             <!-- captcha -->
-            <div class="mt-4 text-black">
+            <!-- <div class="mt-4 text-black">
               <Checkbox v-model="response" />
-            </div>
+            </div> -->
           </div>
           <!-- trasactions -->
           <div class="max-w-[900px] border border-white text-base font-medium bg-[#fffff2] border-t-[#d9d9d9] rounded-b-3xl px-9">
@@ -96,7 +96,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { Checkbox } from 'vue-recaptcha';
+// import { Checkbox } from 'vue-recaptcha';
 import { RouterLink } from 'vue-router';
 import Countdown from '@/components/ui/Countdown.vue';
 import { getFaucetBalance, getFaucetTransaction, claimFaucetToken } from '@/lib/api';
@@ -111,7 +111,7 @@ const sending = ref(false);
 const loading = ref(true);
 const transactions = ref<{ hash: string; createAt: number; }[]>([]);
 const disabled = computed(() => sending.value);
-const response = ref();
+// const response = ref();
 const viewTransactions = computed(() => transactions.value.length ? transactions.value : [{ hash: '', createAt: 0 }]);
 const addressElement = ref<HTMLInputElement | null>(null);
 const restToken = ref(0);
@@ -126,7 +126,7 @@ async function doRefresh() {
   loading.value = true;
   try {
     await Promise.all([
-      address.value && getFaucetTransaction(address.value).then((data) => {
+      address.value && getFaucetTransaction({ address: address.value }).then((data) => {
         if (data.traded) {
           transactions.value = [
             {
@@ -165,7 +165,8 @@ async function onSend() {
   sending.value = true;
 
   try {
-    await claimFaucetToken(address.value, response.value);
+    // await claimFaucetToken({ address: address.value, respToken: response.value });
+    await claimFaucetToken({ address: address.value });
     alertMessage('Success! Please wait for the transaction to be confirmed.');
   } catch (error) {
     const reason = error.message || 'An error occurred. Please try again later.';

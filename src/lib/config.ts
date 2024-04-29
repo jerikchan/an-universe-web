@@ -13,4 +13,9 @@ const opBNBtestnet = {
   explorer: 'https://testnet.bscscan.com/',
 };
 
-export const config = import.meta.env.
+export const config = import.meta.env.VITE_NETWORK !== 'mainnet' ? opBNBtestnet : opBNBmainnet;
+
+export function getTransationUrl(hash: string): string {
+  return `${config.explorer}tx/${hash}`;
+} 
+

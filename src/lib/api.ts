@@ -12,7 +12,7 @@ export function getFaucetTransaction(data: { address: string }) {
   })
 }
 
-export function claimFaucetToken(data: { address: string }) {
+export function claimFaucetToken(data: { address: string; respToken?: string }) {
   return request<string>('/bmaker/faucet/claim', {
     method: 'POST',
     body: JSON.stringify(data),
