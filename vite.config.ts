@@ -21,7 +21,11 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      '^/api/': 'https://bmaker-faucet.hamster.newtouch.com/'
+      '^/api/': {
+        target: 'https://bmaker-faucet.hamster.newtouch.com/',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      }
     }
   }
 })

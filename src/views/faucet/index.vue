@@ -8,7 +8,7 @@
     <div class="text-white font-[Rubik,sans-serif] relative z-30 px-[10px]">
       <div class="max-w-[900px] pt-[15px] lg:pt-[45px] mx-auto">
         <div class="text-center">
-          <h1 class="lg:text-[2.5rem] [font-size:calc(1.375rem_+_1.5vw)] font-medium [letter-spacing:.06rem]">OPTIMISM tBMR FAUCET</h1>
+          <h1 class="lg:text-[2.5rem] [font-size:calc(1.375rem_+_1.5vw)] font-medium [letter-spacing:.06rem]">OPBNB t BMR FAUCET</h1>
           <div class="mt-6 text-xl font-medium">Fast and reliable. 100 tBMR/day.</div>
         </div>
         <div class="mt-[22px] pb-8">
@@ -42,14 +42,16 @@
               </div>
             </div>
             <!-- tips -->
-            <p class="flex items-center mt-4 text-base text-black">✅ Each address can only claim 1 time! In total 100,000 tBMR/day. Rest: 
+            <p class="mt-4 text-base text-black">✅ Each address can only claim 1 time! In total 100,000 tBMR/day. Rest: 
               <template v-if="!loading">
                 <span class="mx-2">{{ restToken }}</span>
               </template>
               <template v-else>
                 <Skeleton class="inline-block w-12 h-6 mx-2" />
               </template>
-            tBMR today.
+              <span>
+                tBMR today.
+              </span>
             </p>
             <!-- captcha -->
             <!-- <div class="mt-4 text-black">

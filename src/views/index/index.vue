@@ -48,7 +48,7 @@
             <span v-if="isMobile" class="title-text">L1-2 INFRASTRUCTURE FOR ALL THE FULL CHAIN ASSETS</span> -->
             LAYER M INFRA FOR OMNI ASSETS
           </div>
-          <div class="md:justify-center md:flex mt-[40px] flex items-center">
+          <div class="md:justify-center md:flex mt-[40px] flex flex-col md:flex-row items-center">
             <!-- <a-button class="w-[178px] h-[37px] text-[#fff]  btn-box md:mr-[24px] ms:mx-auto mb-[24px] md:mb-[0px]"
               @click="clickJoin">Join
               $ABSC</a-button> -->

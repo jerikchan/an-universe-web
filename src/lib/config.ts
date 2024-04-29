@@ -4,13 +4,13 @@ import exp from "constants";
 const opBNBmainnet = {
   chainId: 56,
   chainName: 'Binance Smart Chain Mainnet',
-  explorer: 'https://bscscan.com/',
+  explorer: 'https://opbnbscan.com/',
 };
 // openBNBtestnet
 const opBNBtestnet = {
   chainId: 97,
   chainName: 'Binance Smart Chain Testnet',
-  explorer: 'https://testnet.bscscan.com/',
+  explorer: 'https://testnet.opbnbscan.com/',
 };
 
 export const config = import.meta.env.VITE_NETWORK !== 'mainnet' ? opBNBtestnet : opBNBmainnet;
